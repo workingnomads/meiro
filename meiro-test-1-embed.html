@@ -1,0 +1,23 @@
+<script src="https://meiro-prod.fra1.digitaloceanspaces.com/iframeResizer.min.js"></script>
+<iframe id="meiro_5608970" data-meiro-src="https://go.meiro.cc/5608970" width="100%" frameborder="0"></iframe>
+<script>
+  (function() {
+	var script = document.createElement('script');
+	script.src = 'https://meiro-prod.fra1.digitaloceanspaces.com/iframeResizer.min.js';
+	script.async = true;
+	script.onload = function() {
+		var iframe = document.getElementById('meiro_5608970');
+		if (iframe) {
+			iframe.src = iframe.getAttribute('data-meiro-src');
+			iframe.removeAttribute('data-meiro-src');
+			iframe.onload = function () {
+			  iFrameResize({
+				  checkOrigin: false,
+				  heightCalculationMethod: 'grow',
+			  }, '#meiro_5608970');
+			}
+		}
+	};
+	document.head.appendChild(script);
+  })();
+</script>
